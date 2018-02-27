@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.tutorialstack.listview.ListActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lst_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_custom_adapter"
+            android:layout_alignParentTop="true"
+            android:divider="#b7b9b9"
+            android:dividerHeight="1dp"
+            android:listSelector="#7d7de4" />
+
+        <Button
+            android:id="@+id/btn_custom_adapter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:onClick="callCustomAdapter"
+            android:text="Custom Adapter" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
